@@ -15,6 +15,8 @@ def PassaAlta(img):
     return cv2.filter2D(img, -1, kernel)
 
 def Gaussiano(img, n):
+    # x = cv2.getGaussianKernel(5, 10)
+    # print(x)
     return cv2.GaussianBlur(img, (n,n), 0)
 
 img = cv2.imread("images//all_souls_000026.jpg",0) 
